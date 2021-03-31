@@ -169,3 +169,37 @@ footer p{
     margin: 0 auto;
     padding: 30px 20px;
 }
+
+.colBlock {
+    column-count: 3;
+    column-rule: 1px solid red;
+    column-gap: 50px;
+    padding: 2px;
+}
+
+.colImg {
+    min-height: 400px;
+    max-height: 585px;
+    max-width: 100%;
+}
+.referenceSection {
+    border: 1px solid blue;
+    width: 80%;
+    margin: 4em auto;
+}
+
+.referenceLink {
+    border: 1px solid pink;
+    background-color: grey;
+    margin:auto;
+    text-align: center;
+    padding: 1em 5em 1em;
+}
+
+.referenceBlock {
+    width:24%;
+    float:left;
+    position: relative;
+    margin: 0.5%;
+
+}
