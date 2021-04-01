@@ -181,19 +181,20 @@ footer p{
     min-height: 400px;
     max-height: 585px;
     max-width: 100%;
+    border-radius: 5%;
 }
 .referenceSection {
     border: 1px solid blue;
     width: 80%;
-    margin: 4em auto;
+    margin: 2em auto;
 }
 
 .referenceLink {
     border: 1px solid pink;
     background-color: grey;
-    margin:auto;
+    margin: auto;
     text-align: center;
-    padding: 1em 5em 1em;
+    padding: 0.5em 0 0.5em;
 }
 
 .referenceBlock {
@@ -202,4 +203,31 @@ footer p{
     position: relative;
     margin: 0.5%;
 
+}
+
+.refRow{
+    display: flex; /* The flex property sets the flexible length on flexible items. */
+    flex-wrap: wrap; /*specifies whether the flexible items should wrap or not.*/
+    padding: 0 4px;
+}
+
+.refColumn{
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px; 
+}
+
+.referenceImg {
+    margin-top: 8px;
+    vertical-align: middle;  
+    width: 100%;
+}
+
+
+#top {
+    
+}
+
+#bottom {
+    
 }
