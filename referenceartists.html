@@ -19,11 +19,16 @@ Date Modified: 01/04/21
     
 <body>
     
-    <header>
-        <!-- LOGO -->
-        <img style="float:left; margin: 15px 15px; " src="images/logo.png" alt="Art Blog Logo" height="100"width="100" class="testBorders"> 
+     <header>
         
-        <h1>Reference Material</h1>
+        <section class="mainHeading">
+            
+            <!-- LOGO -->
+            <img src="images/logo.png" alt="Art Blog Logo" class="logoImage">
+            
+            <h1 class="headingText">Artist reference</h1>
+        
+        </section>
         
     <nav>
           <ul>
@@ -39,10 +44,20 @@ Date Modified: 01/04/21
     </header>
     
 <main>
-    <section style="width:100%; text-align:center; padding-top: 2em; border: 1px solid pink;">
-    <a name="top"></a>
-    <a href="#bottom">go to bottom</a>
-    </section>
+    <section style="width:100%; text-align:center; padding-top: 1em; border: 1px solid pink;">
+        <section> <!-- reference type navigation -->
+            <refNav>
+            <ul>
+                <li><a href="references.html">Home</a></li>
+                <li id="active"><a href="referenceartists.html">Artists</a></li>
+                <li><a href="referencenature.html">Nature</a></li>
+                <li><a href="referencepeople.html">People</a></li>
+                <li><a href="referencescultpure.html">Sculpture</a></li>
+                <li><a href="#bottom">page bottom</a></li>
+                <a name="top"></a>
+            </ul>
+            </refNav>
+
 
     <section class="referenceSection">
         
@@ -69,11 +84,30 @@ Date Modified: 01/04/21
             </section>
         </section>        
     </section>
-    
+     
     <section style="width:100%; text-align:center; padding-bottom: 2em; border: 1px solid pink;"> <!-- back to the top link -->
+        <!-- 
     <a name="bottom"></a>
+       
     <a href="#top">back to the top</a>
-    </section>
+    </section> -->
+    
+    <section> <!-- reference type navigation -->
+            <refNav>
+            <ul>
+                <li><a href="references.html">Home</a></li>
+                <li id="active"><a href="referenceartists.html">Artists</a></li>
+                <li><a href="referencenature.html">Nature</a></li>
+                <li><a href="referencepeople.html">People</a></li>
+                <li><a href="referencescultpure.html">Sculpture</a></li>
+                <li><a href="#top">page top</a></li>
+                <a name="bottom"></a>
+
+            </ul>
+            </refNav>
+
+        
+        </section>
     
 </main>
     

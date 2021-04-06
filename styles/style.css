@@ -3,8 +3,38 @@
 }
 
 header {
-    padding: 1px;
+    width:100%;
+    border: 1px solid gold;
     background-color: #fffde7;
+    padding-bottom: 5px;
+}
+
+.mainHeading {
+
+    border: 1px solid aqua;
+    margin: 0 auto;
+    width:50%;
+    max-height: 160px;
+}
+
+.subHeading {
+
+    border: 1px solid aqua;
+    margin: 0;
+    width:50%;
+    font-size: 2em;
+    float: left;
+}
+
+.logoImage {
+    float:left; 
+    position:absolute;
+    width: 200px;
+}
+
+.headingText {
+    font-size: 4vw;
+    text-align: center;
 }
 
 body{
@@ -16,28 +46,47 @@ body{
     border: 1px solid yellow;
 }
 
-nav{
-    padding:5px;
+nav, refNav{
+    padding-top: 5px;
+    width:100%;
+    margin: 0 auto;
+    padding:0;
 }
 
-nav ul{
-    text-align: center;
+refNav ul li{
+    list-style-type: none;
+    background-color: #e2cdb8;
+    display:inline;
+    padding: 5px 5px;
+    margin: 0 auto;
+    border: 2px solid #9b8e8e;
+    border-radius: 10px;
+}
+
+nav ul, refNav ul{
+    float:left;
+    position: relative;
+    display:block;
+    left:50%;
     font-size: 1.2em;
 }
 nav ul li{
     list-style-type: none;
     background-color: #e2cdb8;
-    display:inline;
-    padding:15px;
-    margin: 5px;
-    border: 2px solid #9b8e8e;
-    border-radius: 10px;
+    display:inline-block;
+    position: relative;
+    right:50%;
+    float:left;
+    padding: 8px 12px;
+    margin: 0 auto;
+    border: 3px solid #9b8e8e;
+    border-radius: 12px;
 }
-nav ul li a{
+nav ul li a, refNav ul li a{
     color:white;
     text-decoration: none;
 }
-nav ul li:hover{
+nav ul li, refNav ul li:hover{
     background-color:#deac71;
 }
 #active {
@@ -59,10 +108,7 @@ h2,h3{
 }
 p{
     color:#000000;
-    font-size: 18px;
-}
-img{
-    
+    font-size: 20px;
 }
 
 footer{
@@ -96,22 +142,17 @@ footer p{
     margin: 12px;
     padding: 2px;
 }
-.testBorders {
-    border: 1px solid aqua;
-
-
-}
+.testBorders {border: 1px solid aqua:}
 
 .leftAside {
     border: 1px solid aqua;
     float:left;
     display:block;
-    max-width: 15%;
-    min-width: 10%;
-    min-height: 600px;
+    max-width: 25%;
+    min-width: 15%;
+    min-height: 100vh;
     left: 0px;
 }
-
 
 .asideText {
     font-size: 1em;
@@ -131,8 +172,8 @@ footer p{
     display:inline-block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 70%;
-    max-width: 80%;
+    min-width: 50%;
+    max-width: 60%;
     min-height: 400px;
 }
 
@@ -140,9 +181,9 @@ footer p{
     border: 1px solid aqua;
     float:right;
     display: block;
-    max-width: 15%;
-    min-width: 10%;
-    min-height: 600px;
+    max-width: 25%;
+    min-width: 15%;
+    min-height: 100vh;
     right: 0px;
 }
 
@@ -151,14 +192,12 @@ footer p{
     border: 1px solid #23e600;
     margin: 2em;
     min-height: 300px;
-    
 }
 
 .videoBlock {
     border: 1px solid pink;
     min-width: 30%;
     margin: 1em;
-
     float:left;
     overflow: auto;
 }
@@ -186,7 +225,7 @@ footer p{
 .referenceSection {
     border: 1px solid blue;
     width: 80%;
-    margin: 2em auto;
+    margin: 2% auto;
 }
 
 .referenceLink {
@@ -223,11 +262,49 @@ footer p{
     width: 100%;
 }
 
+#top {}
 
-#top {
-    
+#bottom {}
+
+
+
+
+.subNav {
+    width: 50%;
+    float:right;
+    margin: auto;
+    height: 150px;
+
 }
 
-#bottom {
+.headingGraphicBar {
+    width:100%;
+    height: 40px;
+    position: absolute;
+    margin-top:105px;
+    margin-left: 148px;
+    background-color: burlywood;
+}
+
+.exerciseContainer {
+    border: 1px solid aqua;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.exerciseBlock {
+    border: 1px solid pink;
+    margin: 1em 0.5em;
+    padding: 1em 0.5em;
+    background-color: white;
+}
+
+.favColumn {
+    border: 1px solid pink;
+    float: left;
+    padding: 5px;
+    width: 33.3%;
+    min-height: 50%;
     
 }
