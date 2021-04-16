@@ -1,20 +1,26 @@
 * {
     box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+main{
+    clear:both;
+    
+}
 header {
     width:100%;
     border: 1px solid gold;
-    background-color: #fffde7;
+    /*background-color: #fdf7d5;*/
     padding-bottom: 5px;
 }
 
 .mainHeading {
-
     border: 1px solid aqua;
+    background-color: #fdf7d5;
     margin: 0 auto;
     width:50%;
-    max-height: 160px;
+    height: 130px;
 }
 
 .subHeading {
@@ -28,21 +34,26 @@ header {
 
 .logoImage {
     float:left; 
-    position:absolute;
-    width: 200px;
+    height:100%;
+    max-width: 15%;
 }
 
 .headingText {
-    font-size: 4vw;
+    height: 60px;
+    width: 85%;
+    font-size: 2.5em;
+    display:inline-block;
     text-align: center;
+    padding-right: 5%;
 }
 
 body{
+    background-image: url(../images/bg1.jpg);
     font-family: serif;
     margin: 0px;
     min-height: 100vh;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 140px;
     border: 1px solid yellow;
 }
 
@@ -50,17 +61,24 @@ nav, refNav{
     padding-top: 5px;
     width:100%;
     margin: 0 auto;
-    padding:0;
+    padding: 0;
 }
 
 refNav ul li{
     list-style-type: none;
     background-color: #e2cdb8;
-    display:inline;
+    display:inline-block;
+    position:relative;
+    right:50%;
+    float:left;
     padding: 5px 5px;
     margin: 0 auto;
     border: 2px solid #9b8e8e;
     border-radius: 10px;
+}
+
+li{
+    font-size: 1.5em;
 }
 
 nav ul, refNav ul{
@@ -135,6 +153,7 @@ footer p{
 /*Classes*/
 .fullWidthContent{
     width:100%;
+    bottom: 0;
 }
 
 .imageBorder{
@@ -145,23 +164,26 @@ footer p{
 .testBorders {border: 1px solid aqua:}
 
 .leftAside {
+    background-color: #fdf7d5;
     border: 1px solid aqua;
     float:left;
     display:block;
-    max-width: 25%;
+    padding-top: 50px;
+    max-width: 20%;
     min-width: 15%;
-    min-height: 100vh;
+    min-height: 600px;
     left: 0px;
 }
 
 .asideText {
     font-size: 1em;
-    text-align: center;
-    padding: 4px;
+    text-align: left;
+    padding: 4px 20px;
+    
 }
 
 .bioImage {
-    padding: 2em;
+    padding: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -178,24 +200,34 @@ footer p{
 }
 
 .rightAside {
+    background-color: #fdf7d5;
     border: 1px solid aqua;
+    padding-top: 50px;
     float:right;
     display: block;
-    max-width: 25%;
+    max-width: 20%;
     min-width: 15%;
-    min-height: 100vh;
+    min-height: 600px;
     right: 0px;
 }
 
 
 .blogPost {
+    background-color: #fdf7d5;
     border: 1px solid #23e600;
-    margin: 2em;
+    padding:25px;
+    margin: 0 2em 3em;
     min-height: 300px;
+}
+
+.blogImage{
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .videoBlock {
     border: 1px solid pink;
+    background-color: white;
     min-width: 30%;
     margin: 1em;
     float:left;
@@ -203,6 +235,7 @@ footer p{
 }
 
 .videoContainer {
+    background-color: #fdf7d5;
     border: 1px solid aqua;
     width: 90vw;
     margin: 0 auto;
@@ -223,6 +256,7 @@ footer p{
     border-radius: 5%;
 }
 .referenceSection {
+    clear:both;
     border: 1px solid blue;
     width: 80%;
     margin: 2% auto;
@@ -230,7 +264,7 @@ footer p{
 
 .referenceLink {
     border: 1px solid pink;
-    background-color: grey;
+    background-color: #e3cfb4;
     margin: auto;
     text-align: center;
     padding: 0.5em 0 0.5em;
@@ -241,7 +275,6 @@ footer p{
     float:left;
     position: relative;
     margin: 0.5%;
-
 }
 
 .refRow{
@@ -266,15 +299,11 @@ footer p{
 
 #bottom {}
 
-
-
-
 .subNav {
     width: 50%;
     float:right;
     margin: auto;
     height: 150px;
-
 }
 
 .headingGraphicBar {
@@ -303,8 +332,6 @@ footer p{
 .favColumn {
     border: 1px solid pink;
     float: left;
-    padding: 5px;
+    padding: 15px;
     width: 33.3%;
-    min-height: 50%;
-    
 }
